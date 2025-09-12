@@ -5,10 +5,10 @@ Print both the original variable and the converted integer.
 
 """
 #converted 8.25 to 8 
-float = 8.25
-convert=int(float)
-print (float)
-print (convert)
+my_float= 8.25
+my_convert=int(my_float)
+print (my_float)
+print (my_convert)
 
 
 """
@@ -32,14 +32,18 @@ TASK 3:
 Write code that takes two numbers as input (an integer and a float), 
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
-integer = int(input("Integer: "))
-float = float(input("Float: "))
+my_integer = int(input("Integer: "))
+my_float = float(input("Float: "))
 
-add = integer + float
-subtract= integer - float
-multiply= integer * float
-divide= integer / float
+add = my_integer + my_float
+subtract= my_integer - my_float
+multiply= my_integer * my_float
+divide= my_integer / my_float
 
+print(add)
+print(subtract)
+print(multiply)
+print(multiply)
 
 
 
@@ -66,9 +70,14 @@ TASK 5:
 Create a string variable with that is a list of numbers and convert that string into a tuple.
 Then print out the both the original string and tuple.
 """
-string = "1,3,5,7,9"
+my_string = "1,3,5,7,9"
 
-tuple = tuple(int())
+my_list = my_string.split(",")
+my_tuple = tuple(my_list)
+print(my_string)
+print(my_list)
+print(my_tuple)
+
 """
 TASK 6:
 
@@ -77,3 +86,11 @@ Use the join() function to combine all subjects into a single string separated b
 Then create another version using " - " as the separator.
 Print both the original list and both joined strings.
 """
+
+fav_subj=["ELA, Math, Science, History"]
+my_comma= ", " .join(fav_subj)
+my_dash= "- " .join(fav_subj)
+
+print(fav_subj)
+print(my_comma)
+print(my_dash)
