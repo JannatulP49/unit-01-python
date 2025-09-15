@@ -12,6 +12,8 @@ if enter_pass.upper() == my_pass.upper():
     print("Correct")
 elif enter_pass.lower() == my_pass.lower():
     print("Correct")
+else:
+     print("incorrect")
 print(enter_pass)
 
 """
@@ -39,6 +41,7 @@ a= "I like"
 b= "cats"
 c="dogs"
 
+input_1=input("Fav animal:")
 txt="{0} {1}".format(a,c)
 print(txt)
 
@@ -60,8 +63,11 @@ Write a program that takes in two floats, and prints the quotient
 The result should be rounded to the nearest tenth (1 decimal place)
 """
 
+#I made an input for two different floats and then took the quotient of both and then rounded the output to the nearest tenth.
+
 my_num1= float(input("Number 1:"))
 my_num2= float(input("Number 2:"))
 
-txt = f"Results: {my_num1: 2f}"
-txt2= f"Results: {my_num2: 2f}"
+ans= my_num1 / my_num2
+round= "Result: {0:.1f}".format(ans)
+print (ans, round)
