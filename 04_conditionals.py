@@ -73,7 +73,7 @@ Exercise 6:
 Determine the type of a triangle based on side lengths.
 Equilateral, Isosceles, Scalene, or Not a triangle.
 '''
-#Determined whether based on the side lengths if the triangle is Equilateral, isoceles, scalene, or not a triangle.
+#Determined based on the side lengths if the triangle is Equilateral, isoceles, scalene, or not a triangle.
 Side1=8
 Side2=6
 Side3=8
