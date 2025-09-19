@@ -35,11 +35,17 @@ elif operation == '4':
     else:
         print('Result:',num1 / num2)
 elif operation == '5':
-    print('Result:',num1 // num2)
+    if num2 == 0:
+        print('Can not calculate with that number!')
+    else:
+       print('Result:',num1 // num2)
 elif operation == '6':
     print('Result:',num1 ** num2)
 elif  operation == '7':
-    print('Result:',num1 % num2)
+    if num2 == 0:
+        print('Can not calculate with that number!')
+    else:
+      print('Result:',num1 % num2)
 #If user puts anything else it will be considered invaild
 else: 
     print('That operation is invalid!')
