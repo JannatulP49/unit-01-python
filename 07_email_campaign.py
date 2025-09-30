@@ -24,7 +24,7 @@ for x in range(len(email_L)):
         engagement_summary[status] += 1
 #This code basically calculated the success rate of the differnet comapanies.
 click_rate = engagement_summary['clicked']/len(email_L) * 100
-#This does the mathto determine the success.
+#This does the math to determine the success.
 if click_rate >= 50: percent="Excellenet"
 elif click_rate >= 30: percent= "Good"
 elif click_rate > 0: percent= "Needs Improvement"
