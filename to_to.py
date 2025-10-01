@@ -1,5 +1,8 @@
 #I created an empty list
-my_list= []
+with open('todo.txt') as file:
+  my_list = file.readlines()
+print(my_list)
+
 sum = 0 
 print("YOUR TO-DO LIST:")
 print()
@@ -11,7 +14,7 @@ while True:
     #printed the empty list 
 #allow the user to choose whether they want to add or remove something
     print()
-    addrem = input("Would you like to add or remove something: ").strip().lower()
+    addrem = input("Would you like to 'add' or 'remove' or 'exit' out of the program: ").strip().lower()
     print()
 #made it so that if its add then they could add a new element to the list 
     if addrem == 'add':
@@ -34,9 +37,17 @@ while True:
 #We ask them what number they want to remove and them subtract 1 since the user doesnt know it starts at 0.
          rem= int(input("What number you like to remove: "))
          del my_list[rem - 1]
- #Then I use the for loop to to list out the differnet things in the list.
          for x in my_list:
              print(x)
+
+    elif addrem == 'exit':
+         with open('todo.txt','a') as file:
+          my_list = file.writelines(my_list)
+         break
+
+ #Then I use the for loop to to list out the differnet things in the list.
+        
          
+
 
 
