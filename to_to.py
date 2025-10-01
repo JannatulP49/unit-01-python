@@ -1,15 +1,17 @@
 #I created an empty list
-print("YOUR TO-DO LIST")
-print()
 my_list= []
-
+sum = 0 
+print("YOUR TO-DO LIST:")
+print()
 #made sure the condition of the loop is always true
+for x in my_list:
+    sum += x
+    print(sum)
 while True:
     #printed the empty list 
-    
-    print
 #allow the user to choose whether they want to add or remove something
-    addrem = input("Would you like to add or remove something: ")
+    print()
+    addrem = input("Would you like to add or remove something: ").strip().lower()
     print()
 #made it so that if its add then they could add a new element to the list 
     if addrem == 'add':
@@ -17,7 +19,15 @@ while True:
         print()
         my_list.append(add)
         for x in my_list:
+        
             print(x)
+            print()
+            print("Updated To-do List: ")
+        count = 1
+        for item in my_list:
+            print(item)
+            count += 1
+        print()
 #made it so that if its remove then they could remove an element to the list 
     elif addrem == 'remove':
          print()
@@ -27,6 +37,6 @@ while True:
  #Then I use the for loop to to list out the differnet things in the list.
          for x in my_list:
              print(x)
-        
+         
 
 
