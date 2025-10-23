@@ -30,7 +30,6 @@ def read_file(filename):
       file = open(filename, 'r')
       contents = file.read()
       print("File contents:", contents)
-      #
     except FileNotFoundError:
        print('The File doesnt exist.')
        try:
